@@ -8,52 +8,9 @@
   <title>News content</title>
 </head>
 <body>
-  <button class="reboot"></button>
-  <header>
+  <header onclick="scrollToTop()">
     <div class="sub-header">
-      <div class="filter-ico">
-        <img class="open" src="source/images/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="">
-        <img class="close" src="source/images/close_FILL0_wght400_GRAD0_opsz48.svg" alt="">
-      </div>
       <p class="name-company">jNews</p>
-      <div class="filter-burger">
-        <p class="filter-text">Темы новостей</p>
-        <div class="sport">
-          <p>Спорт</p>
-          <input type="checkbox" class="chekbox-sport chkx" name="choice">
-        </div>
-        <div class="policy">
-          <p>Политика</p>
-          <input type="checkbox" class="chekbox-policy chkx" name="choice">
-        </div>
-        <div class="food">
-          <p>Еда и напитки</p>
-          <input type="checkbox" class="chekbox-food chkx" name="choice">
-        </div>
-        <div class="tehnology">
-          <p>Технология</p>
-          <input type="checkbox" class="chekbox-tehnology chkx" name="choice">
-        </div>
-        <div class="science">
-          <p>Наука</p>
-          <input type="checkbox" class="chekbox-science chkx" name="choice">
-        </div>
-        <div class="fashion">
-          <p>Мода</p>
-          <input type="checkbox" class="chekbox-fashion chkx" name="choice">
-        </div>
-        <div class="it">
-          <p>ИТ-индустрия</p>
-          <input type="checkbox" class="chekbox-it chkx" name="choice">
-        </div>
-        <div class="all">
-          <p>Все</p>
-          <input type="checkbox" class="chekbox-all chkx" name="choice">
-        </div>
-        <div class="submit">
-          <button class="apply-filter">Применить</button>
-        </div>
-      </div>
     </div>
   </header>
   <main>
@@ -70,11 +27,37 @@
           <button class="play-text" onclick="getButtonParen"></button>
         </div>
         <div class="news-original-link">
-          <a href="">original link</a>
+          <a href="">Читать полностью</a>
         </div>
       </div>
     </div>
   </main>
+  <div class="categories-list">
+    <nav>
+      <ul>
+        <li><a href="">Мода исскуство журналы кино<img src="source/images/swipe.svg" alt=""></a></li>
+        <li><a href="">Автомобили и наука<img src="source/images/swipe.svg" alt=""></a></li>
+        <li><a href="">Спорт еда здоровье путешествие<img src="source/images/swipe.svg" alt=""></a></li>
+        <li><a href="">Политика и бизнесс<img src="source/images/swipe.svg" alt=""></a></li>
+        <li><a href="">Разное<img src="source/images/swipe.svg" alt=""></a></li>
+        <li><a href="">Все категории<img src="source/images/swipe.svg" alt=""></a></li>
+      </ul>
+    </nav>
+  </div>
+  <footer>
+    <div class="footer-line">
+      <button class="footer-btn">
+        <p>Категория новостей</p>
+        <img src="source/images/swipe.svg" class="btn-active svg" alt="">
+      </button>
+    </div>
+  </footer>
+  <div class="animation-logo">
+    <p>powered by</p>
+    <p class="amandows">AMANDOWS</p>
+    <img src="source/images/logo.png" alt="">
+    <div class="loader"></div>
+  </div>
   <script src="source/js/script.js"></script>
   <script src="source/js/test.js"></script>
 </body>

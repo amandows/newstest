@@ -1,49 +1,37 @@
+const animationLogo = document.querySelector('.animation-logo');
+
+setTimeout(() => {
+    animationLogo.remove();
+}, 3000);
 
 let openMenu = document.querySelector('.open')
 let closeMenu = document.querySelector('.close')
 let menuIco = document.querySelector('.filter-ico')
 let burger = document.querySelector('.filter-burger')
-let num = 0;
-menuIco.addEventListener('click', () => {
-    num++
-    console.log(num)
-    if (num % 2 !== 0) {
-        openMenu.style.cssText = "display: none;"
-        closeMenu.style.cssText = "display: block;"
-        burger.style.cssText = "top: 49px; left: 0;"
-    }
-    else if (num % 2 == 0) {
-        closeMenu.style.cssText = "display: none;"
-        openMenu.style.cssText = "display: block;"
-        burger.style.cssText = "top: 49px; left: -100%;"
-    }
-})
-
 
 
 let rebootButton = document.querySelector('.reboot');
 
-rebootButton.addEventListener('click', function () {
-    location.reload();
-});
-
-
-let sportCheck = document.querySelector('.chekbox-sport')
-let policyCheck = document.querySelector('.chekbox-policy')
-let foodCheck = document.querySelector('.chekbox-food')
-let tehnologyCheck = document.querySelector('.chekbox-tehnology')
-let scienceCheck = document.querySelector('.chekbox-science')
-let fashionCheck = document.querySelector('.chekbox-fashion')
-let itCheck = document.querySelector('.chekbox-it')
-let allCheck = document.querySelector('.chekbox-all')
-let applyFilter = document.querySelector('.apply-filter')
-
+let num = 0
+const ctgList = document.querySelector('.categories-list')
+const footerBtn = document.querySelector('.footer-btn')
+let btnActive = document.querySelector('.btn-active')
+footerBtn.addEventListener('click', () => {
+    num++
+    if (num % 2 !== 0) {
+        ctgList.style.cssText = "bottom: 50px"
+        btnActive.style.cssText = "transform: rotate(90deg) translateY(40%);"
+    } else if (num % 2 == 0) {
+        ctgList.style.cssText = "bottom: -100%"
+        btnActive.style.cssText = "transform: rotate(-90deg) translateY(-40%);"
+    }
+})
 
 const newsUrl = 'https://raw.githubusercontent.com/amandows/Gitpush/de2319ddfa219662283611c9052b5441d81f0b6a/allNews2.json';
 const newsContainer = document.querySelector('.news-container');
 
 function showNews(news) {
-  const newsHtml = news.map(item => `
+    const newsHtml = news.map(item => `
     <div class="news">
         <div class="news-img">
             <img data-src="${item.image}" src="source/images/10px.png" alt="">
@@ -56,16 +44,16 @@ function showNews(news) {
             <button onclick="getButtonParent()" class="play-text"></button>
         </div>
         <div class="news-original-link">
-            <a href="${item.link}">original link</a>
+            <a href="${item.link}">Читать полностью</a>
         </div>
     </div>
-  `).join('');
-  newsContainer.innerHTML = newsHtml;
+    `).join('');
+    newsContainer.innerHTML = newsHtml;
 }
 
 fetch(newsUrl)
-  .then(response => response.json())
-  .then(data => showNews(data));
+    .then(response => response.json())
+    .then(data => showNews(data));
 
 
 
@@ -86,9 +74,9 @@ function getButtonParent() {
     utterance.rate = 1.0;
     voiceNum++
     if (voiceNum % 2 !== 0) {
-      synth.speak(utterance);
+        synth.speak(utterance);
     } else if (voiceNum % 2 == 0) {
-      window.speechSynthesis.cancel();
+        window.speechSynthesis.cancel();
     }
 }
 
@@ -130,3 +118,6 @@ function scrollY() {
 
 setTimeout(scrollY, 300);
 
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
