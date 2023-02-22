@@ -27,6 +27,7 @@ footerBtn.addEventListener('click', () => {
     }
 })
 
+
 const newsUrl = 'https://raw.githubusercontent.com/amandows/Gitpush/main/json/allNews.json';
 const newsContainer = document.querySelector('.news-container');
 
@@ -53,7 +54,11 @@ function showNews(news) {
 
 fetch(newsUrl)
     .then(response => response.json())
-    .then(data => showNews(data));
+    .then(data => {
+        showNews(data);
+        scrollY();
+    });
+
 
 
 
@@ -115,8 +120,6 @@ function scrollY() {
         }
     }
 }
-
-setTimeout(scrollY, 300);
 
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
