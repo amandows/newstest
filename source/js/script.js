@@ -27,7 +27,7 @@ footerBtn.addEventListener('click', () => {
     }
 })
 
-const newsUrl = 'https://raw.githubusercontent.com/amandows/Gitpush/de2319ddfa219662283611c9052b5441d81f0b6a/allNews2.json';
+const newsUrl = 'https://raw.githubusercontent.com/amandows/Gitpush/main/json/allNews.json';
 const newsContainer = document.querySelector('.news-container');
 
 function showNews(news) {
