@@ -39,7 +39,7 @@ let allCheck = document.querySelector('.chekbox-all')
 let applyFilter = document.querySelector('.apply-filter')
 
 
-const newsUrl = 'https://raw.githubusercontent.com/amandows/Gitpush/05b3a814a3ab75db06ecdbe973b655063e2abe47/allNews2.json';
+const newsUrl = 'https://raw.githubusercontent.com/amandows/Gitpush/de2319ddfa219662283611c9052b5441d81f0b6a/allNews2.json';
 const newsContainer = document.querySelector('.news-container');
 
 function showNews(news) {
