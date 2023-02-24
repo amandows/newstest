@@ -28,7 +28,7 @@ footerBtn.addEventListener('click', () => {
 })
 
 
-const newsUrl = 'https://raw.githubusercontent.com/amandows/Gitpush/main/json/Allthers.json';
+const newsUrl = 'https://raw.githubusercontent.com/amandows/Gitpush/main/json/svobodaSortOk.json';
 const newsContainer = document.querySelector('.news-container');
 
 function showNews(news) {
