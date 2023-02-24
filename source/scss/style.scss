@@ -38,11 +38,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 //____________________________________________________________
+body {
+  background: url('https://img.freepik.com/premium-photo/endless-flight-futuristic-dark-corridor-with-neon-lighting-bright-neon-circle-front_250994-2747.jpg?w=2000');
+  background-attachment: fixed;
+}
 header {
   width: 100%;
-  height: 50px;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid #525252;
+  height: 50px;background: transparent;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid #ffffff91;
   position: fixed;
   z-index: 21;
   .sub-header {
@@ -68,7 +72,7 @@ header {
       font-family: "Prompt";
       font-size: 25px;
       font-weight: 500;
-      color: #006875;
+      color: #ffffff;
       z-index: 3;
     }
   } 
@@ -94,6 +98,8 @@ main {
           // top: 0;
           // left: 0;
           width: 100%;
+          border-radius: 10px;
+          border: 1px solid #fdfdfdab;
           // height: 100%;
           // object-fit: cover;
         }
@@ -105,22 +111,35 @@ main {
           font-family: "Rubik";
           font-size: 18px;
           font-weight: 600;
+          color: #fdfdfd;
+          padding: 10px;
+          background: transparent;
+          backdrop-filter: blur(15px);
+          border: 1px solid #ffffff93;
+          border-radius: 10px;
         }
       }
       .news-description {
-        width: 100%;
+        background: transparent;
         p {
           font-family: "Calibri";
-          font-size: 16px;
-          line-height: 16px;
+          font-size: 18px;
+          line-height: 18px;
           font-weight: 400;
+          color: #ffffff;
+          background: transparent;
+          backdrop-filter: blur(15px);
+          border-radius: 10px;
+          border: 1px solid #ffffff93;
+          padding: 10px;
         }
         .play-text {
           width: 50px;
           height: 25px;
-          background: #006875;
+          background: #ffffff0c;
           border-radius: 5px;
           margin-top: 20px;
+          border: 1px solid #ffffff93;
           position: relative;
           z-index: 1; /* Необходимо для позиционирования псевдоэлемента */
         }
@@ -154,7 +173,8 @@ main {
           font-weight: 600;
           color: #fdfdfd;
           padding: 5px 10px;
-          background-color: #006875;
+          background-color: #ffffff0a;
+          border: 1px solid #ffffff93;
           border-radius: 5px;
         }
       }
@@ -213,7 +233,8 @@ footer {
   position: fixed;
   bottom: 0;
   border-top: 1px solid #525252;
-  background-color: #ffffff;
+  background: transparent;
+  backdrop-filter: blur(15px);
   z-index: 21;
   .footer-line {
     width: 100%;
@@ -226,12 +247,15 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background: transparent;
+      backdrop-filter: blur(15px);
       p {
         display: block;
         font-size: 16px;
         font-family: 'Montserrat';
-        font-weight: 600;
-        transform: translateX(50%);  
+        font-weight: 500;
+        transform: translateX(50%);
+        color: #fdfdfd;
       }
       .btn-active {
         display: inline-block;

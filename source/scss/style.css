@@ -72,11 +72,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+body {
+  background: url("https://img.freepik.com/premium-photo/endless-flight-futuristic-dark-corridor-with-neon-lighting-bright-neon-circle-front_250994-2747.jpg?w=2000");
+  background-attachment: fixed;
+}
+
 header {
   width: 100%;
   height: 50px;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid #525252;
+  background: transparent;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.568627451);
   position: fixed;
   z-index: 21;
 }
@@ -104,7 +111,7 @@ header .sub-header .name-company {
   font-family: "Prompt";
   font-size: 25px;
   font-weight: 500;
-  color: #006875;
+  color: #ffffff;
   z-index: 3;
 }
 
@@ -130,6 +137,8 @@ main .news-container .news .news-img {
 }
 main .news-container .news .news-img img {
   width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(253, 253, 253, 0.6705882353);
 }
 main .news-container .news .news-title {
   width: 100%;
@@ -139,22 +148,37 @@ main .news-container .news .news-title h3 {
   font-family: "Rubik";
   font-size: 18px;
   font-weight: 600;
+  color: #fdfdfd;
+  padding: 10px;
+  background: transparent;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.5764705882);
+  border-radius: 10px;
 }
 main .news-container .news .news-description {
-  width: 100%;
+  background: transparent;
 }
 main .news-container .news .news-description p {
   font-family: "Calibri";
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 18px;
   font-weight: 400;
+  color: #ffffff;
+  background: transparent;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5764705882);
+  padding: 10px;
 }
 main .news-container .news .news-description .play-text {
   width: 50px;
   height: 25px;
-  background: #006875;
+  background: rgba(255, 255, 255, 0.0470588235);
   border-radius: 5px;
   margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5764705882);
   position: relative;
   z-index: 1; /* Необходимо для позиционирования псевдоэлемента */
 }
@@ -185,7 +209,8 @@ main .news-container .news .news-original-link a {
   font-weight: 600;
   color: #fdfdfd;
   padding: 5px 10px;
-  background-color: #006875;
+  background-color: rgba(255, 255, 255, 0.0392156863);
+  border: 1px solid rgba(255, 255, 255, 0.5764705882);
   border-radius: 5px;
 }
 
@@ -227,7 +252,9 @@ footer {
   position: fixed;
   bottom: 0;
   border-top: 1px solid #525252;
-  background-color: #ffffff;
+  background: transparent;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   z-index: 21;
 }
 footer .footer-line {
@@ -242,13 +269,17 @@ footer .footer-line .footer-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: transparent;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 footer .footer-line .footer-btn p {
   display: block;
   font-size: 16px;
   font-family: "Montserrat";
-  font-weight: 600;
+  font-weight: 500;
   transform: translateX(50%);
+  color: #fdfdfd;
 }
 footer .footer-line .footer-btn .btn-active {
   display: inline-block;
