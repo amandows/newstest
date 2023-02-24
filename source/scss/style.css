@@ -175,12 +175,23 @@ main .news-container .news .news-description p {
 main .news-container .news .news-description .play-text {
   width: 50px;
   height: 25px;
-  background: rgba(255, 255, 255, 0.0470588235);
   border-radius: 5px;
   margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.5764705882);
   position: relative;
-  z-index: 1; /* Необходимо для позиционирования псевдоэлемента */
+  z-index: 1;
+  background: transparent;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px); /* Необходимо для позиционирования псевдоэлемента */
+}
+main .news-container .news .news-description span {
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: #fdfdfd;
+  padding: 0px 15px;
+  transform: translateY(40%);
 }
 main .news-container .news .news-description .play-text::before {
   content: "▶"; /* Код символа Unicode для треугольника вправо */
@@ -209,9 +220,11 @@ main .news-container .news .news-original-link a {
   font-weight: 600;
   color: #fdfdfd;
   padding: 5px 10px;
-  background-color: rgba(255, 255, 255, 0.0392156863);
   border: 1px solid rgba(255, 255, 255, 0.5764705882);
   border-radius: 5px;
+  background: transparent;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 
 .categories-list {
@@ -226,13 +239,17 @@ main .news-container .news .news-original-link a {
   width: 100%;
   background: #ffffff;
   padding: 15px 0 15px 20px;
-  color: #141414;
+  color: #ffffff;
   ont-size: 16px;
   font-family: "Montserrat";
   font-weight: 600;
   border-top: 1px solid #000;
   position: relative;
   transition: all 0.3s ease 0s;
+  background: transparent;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.5764705882);
 }
 .categories-list nav ul li a:hover {
   background-color: #006875;
@@ -251,7 +268,7 @@ footer {
   height: 50px;
   position: fixed;
   bottom: 0;
-  border-top: 1px solid #525252;
+  border-top: 1px solid #c5c5c5;
   background: transparent;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);

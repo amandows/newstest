@@ -42,7 +42,7 @@ function showNews(news) {
         </div>
         <div class="news-description">
             <p>${item.description}</p>
-            <button onclick="getButtonParent()" class="play-text"></button>
+            <button onclick="getButtonParent()" class="play-text"></button><span>Воспроизвести текст</span>
         </div>
         <div class="news-original-link">
             <a href="${item.link}">Читать полностью</a>

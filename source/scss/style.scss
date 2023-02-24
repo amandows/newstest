@@ -117,6 +117,7 @@ main {
           backdrop-filter: blur(15px);
           border: 1px solid #ffffff93;
           border-radius: 10px;
+          
         }
       }
       .news-description {
@@ -136,14 +137,23 @@ main {
         .play-text {
           width: 50px;
           height: 25px;
-          background: #ffffff0c;
           border-radius: 5px;
           margin-top: 20px;
           border: 1px solid #ffffff93;
           position: relative;
-          z-index: 1; /* Необходимо для позиционирования псевдоэлемента */
+          z-index: 1;
+          background: transparent;
+          backdrop-filter: blur(15px); /* Необходимо для позиционирования псевдоэлемента */
         }
-        
+        span {
+          display: inline-block;
+          font-size: 14px;
+          font-family: 'Montserrat';
+          font-weight: 600;
+          color: #fdfdfd;
+          padding: 0px 15px;
+          transform: translateY(40%);
+        }
         .play-text::before {
           content: '\25B6'; /* Код символа Unicode для треугольника вправо */
           font-size: 15px;
@@ -173,9 +183,10 @@ main {
           font-weight: 600;
           color: #fdfdfd;
           padding: 5px 10px;
-          background-color: #ffffff0a;
           border: 1px solid #ffffff93;
           border-radius: 5px;
+          background: transparent;
+          backdrop-filter: blur(15px);
         }
       }
     }
@@ -204,13 +215,16 @@ main {
           width: 100%;
           background: #ffffff;
           padding: 15px 0 15px 20px;
-          color: #141414;
+          color: #ffffff;
           ont-size: 16px;
           font-family: 'Montserrat';
           font-weight: 600;
           border-top: 1px solid #000;
           position: relative;
           transition: all 0.3s ease 0s;
+          background: transparent;
+          backdrop-filter: blur(15px);
+          border-top: 1px solid #ffffff93;
           &:hover {
             background-color: #006875;
           }
@@ -232,7 +246,7 @@ footer {
   height: 50px;
   position: fixed;
   bottom: 0;
-  border-top: 1px solid #525252;
+  border-top: 1px solid #c5c5c5;
   background: transparent;
   backdrop-filter: blur(15px);
   z-index: 21;
