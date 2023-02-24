@@ -44,8 +44,9 @@ body {
 }
 header {
   width: 100%;
-  height: 50px;background: transparent;
-  backdrop-filter: blur(15px);
+  height: 50px;
+  background-color: #0000008c;
+  backdrop-filter: blur(3px);
   border-bottom: 1px solid #ffffff91;
   position: fixed;
   z-index: 21;
@@ -79,7 +80,7 @@ header {
 }
 
 main {
-  padding: 50px 0 0 0;
+  padding: 55px 0 0 0;
   .news-container {
     max-width: 1080px;
     margin: 0 auto;
@@ -219,11 +220,10 @@ main {
           ont-size: 16px;
           font-family: 'Montserrat';
           font-weight: 600;
-          border-top: 1px solid #000;
           position: relative;
           transition: all 0.3s ease 0s;
-          background: transparent;
-          backdrop-filter: blur(15px);
+          background-color: #0000008c;
+          backdrop-filter: blur(3px);
           border-top: 1px solid #ffffff93;
           &:hover {
             background-color: #006875;
@@ -247,8 +247,8 @@ footer {
   position: fixed;
   bottom: 0;
   border-top: 1px solid #c5c5c5;
-  background: transparent;
-  backdrop-filter: blur(15px);
+  background-color: #0000008c;
+  backdrop-filter: blur(3px);
   z-index: 21;
   .footer-line {
     width: 100%;
@@ -261,8 +261,7 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: transparent;
-      backdrop-filter: blur(15px);
+      background: none;
       p {
         display: block;
         font-size: 16px;

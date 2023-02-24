@@ -80,9 +80,9 @@ body {
 header {
   width: 100%;
   height: 50px;
-  background: transparent;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.5490196078);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.568627451);
   position: fixed;
   z-index: 21;
@@ -116,7 +116,7 @@ header .sub-header .name-company {
 }
 
 main {
-  padding: 50px 0 0 0;
+  padding: 55px 0 0 0;
 }
 main .news-container {
   max-width: 1080px;
@@ -243,12 +243,11 @@ main .news-container .news .news-original-link a {
   ont-size: 16px;
   font-family: "Montserrat";
   font-weight: 600;
-  border-top: 1px solid #000;
   position: relative;
   transition: all 0.3s ease 0s;
-  background: transparent;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.5490196078);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   border-top: 1px solid rgba(255, 255, 255, 0.5764705882);
 }
 .categories-list nav ul li a:hover {
@@ -269,9 +268,9 @@ footer {
   position: fixed;
   bottom: 0;
   border-top: 1px solid #c5c5c5;
-  background: transparent;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.5490196078);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   z-index: 21;
 }
 footer .footer-line {
@@ -286,9 +285,7 @@ footer .footer-line .footer-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: transparent;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  background: none;
 }
 footer .footer-line .footer-btn p {
   display: block;
